@@ -1,0 +1,49 @@
+<form action="/submit" method="POST">
+    <div>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+    </div>
+    <br>
+    <br>
+    <div>
+        <label for="userEmail">Email Address:</label>
+        <input type="email" id="userEmail" name="userEmail" required>
+    </div>
+    <br>
+    <br>
+    <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+    <br>
+    <br>
+    <div>
+        <label for="inquiryType">Subject Category:</label>
+        <select id="inquiryType" name="inquiryType" required>
+            <option value="support">Customer Support</option>
+            <option value="sales">Sales Inquiry</option>
+            <option value="feedback">General Feedback</option>
+        </select>
+    </div>
+    <br>
+    <fieldset>
+        <legend>Preferred Contact Method</legend>
+        <input type="radio" id="contactEmail" name="contactMethod" value="email" checked>
+        <label for="contactEmail">Email</label>
+        
+        <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+        <label for="contactPhone">Phone</label>
+    </fieldset>
+    <br>
+    <div>
+        <label for="messageBody">Message:</label>
+        <textarea id="messageBody" name="messageBody" rows="5" required></textarea>
+    </div>
+    <br>
+    
+
+    <div>
+        <button type="submit">Submit Form</button>
+        <button type="reset">Clear Data</button>
+    </div>
+</form>
